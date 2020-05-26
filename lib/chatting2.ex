@@ -38,13 +38,17 @@ defmodule Chatting2 do
     |> read_line()
     |> broadcast_line()
 
+    receive_broadcast(socket)
+
+    serve(socket)
+  end
+
+  defp receive_broadcast(socket) do
     receive do
       {:new_broadcast, line} -> write_line(line, socket)
     after
       100 -> "nothing yet"
     end
-
-    serve(socket)
   end
 
   defp broadcast_line(line) do

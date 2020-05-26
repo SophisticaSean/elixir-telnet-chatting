@@ -3,7 +3,8 @@ start with `iex -S mix`
 
 # Example
 ## Client 1
-```➜  ~ telnet localhost 4040
+```
+➜  ~ telnet localhost 4040
 Trying ::1...
 telnet: connect to address ::1: Connection refused
 Trying 127.0.0.1...
@@ -17,10 +18,12 @@ you say: i am here
 she's great Tim, thank you
 you say: she's great Tim, thank you
 #PID<0.148.0> says: of course man glad to hear it
-#PID<0.148.0> says: also what are you doing this weekend?```
+#PID<0.148.0> says: also what are you doing this weekend?
+```
 
 ## Client 2
-```➜  ~ telnet localhost 4040
+```
+➜  ~ telnet localhost 4040
 Trying ::1...
 telnet: connect to address ::1: Connection refused
 Trying 127.0.0.1...
@@ -35,4 +38,5 @@ you say: how is your wife steve?
 of course man glad to hear it
 you say: of course man glad to hear it
 also what are you doing this weekend?
-you say: also what are you doing this weekend?```
+you say: also what are you doing this weekend?
+```
